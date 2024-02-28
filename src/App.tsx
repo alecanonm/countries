@@ -5,7 +5,7 @@ import { SearchBar } from './components/SearchBar'
 function App() {
   return (
     <div className='grid grid-rows-2 gap-10'>
-      <section className='row-span-2 flex flex-col sm:items-center  gap-10 sm:flex-row justify-between px-8 sm:px-24'>
+      <section className='row-span-2 flex flex-col md:items-center gap-10 md:flex-row justify-between px-8 sm:px-24'>
         <SearchBar />
         <DropMenu />
       </section>
