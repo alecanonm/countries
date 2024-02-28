@@ -1,13 +1,16 @@
+import { Navbar } from '../components/Navbar'
 import { Outlet } from 'react-router'
 
 export default function RootLyout() {
   return (
-    <>
-      <header></header>
-      <main>
+    <div className='h-screen flex flex-col items-center justify-center'>
+      <header className='w-full'>
+        <Navbar />
+      </header>
+      <main className='grow'>
         <Outlet />
       </main>
-      <footer></footer>
-    </>
+      <footer>footer</footer>
+    </div>
   )
 }
