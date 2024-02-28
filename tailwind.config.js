@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        nanitoFont: ['Nunito Sans'],
+      },
       boxShadow: {
         '3xl': '0 0 10px -2px rgba(0, 0, 0, 0.3)',
       },

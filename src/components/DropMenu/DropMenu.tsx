@@ -1,6 +1,6 @@
 export default function DropMenu() {
   return (
-    <select className='flex items-center gap-3 mb-1 w-52 rounded-md p-4 bg-white outline-none shadow-3xl'>
+    <select className='flex items-center gap-3 mb-1 w-52 rounded-md p-4  outline-none shadow-3xl'>
       <option selected disabled hidden value='none'>
         Filter by Region
       </option>
