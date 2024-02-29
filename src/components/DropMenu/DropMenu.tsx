@@ -1,7 +1,7 @@
 export default function DropMenu() {
   return (
     <div className='flex items-center gap-3 mb-1 w-52 rounded-md p-4  outline-none shadow-3xl'>
-      <select className='bg-white'>
+      <select className='bg-white ring-none outline-none'>
         <option defaultValue='Filter by Region' hidden>
           Filter by Region
         </option>
