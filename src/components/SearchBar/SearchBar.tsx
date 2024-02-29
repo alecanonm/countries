@@ -18,13 +18,13 @@ export default function SearchBar() {
   }
 
   return (
-    <div className='flex items-center w-full sm:w-auto shadow-3xl rounded-md hover:ring-1 ring-black'>
+    <div className='flex dark:bg-darkBlueM items-center w-full sm:w-auto shadow-3xl rounded-md hover:ring-1 ring-black'>
       <img src='search.png' className='ml-3' alt='lup' width={16} height={16} />
       <input
         onChange={onchangeHanlder}
         value={text}
         type='text'
-        className='outline-none rounded-md p-4 sm:w-[400px] font-bold'
+        className='outline-none dark:bg-darkBlueM text-lightModeBackground rounded-md p-4 sm:w-[400px] font-bold'
         placeholder='Search for a country...'
       />
     </div>
