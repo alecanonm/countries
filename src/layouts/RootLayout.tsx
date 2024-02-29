@@ -3,7 +3,7 @@ import { Outlet } from 'react-router'
 
 export default function RootLyout() {
   return (
-    <div className='h-screen flex flex-col gap-16 items-center '>
+    <div className='h-screen flex flex-col gap-16 items-center'>
       <header className='w-full'>
         <Navbar />
       </header>

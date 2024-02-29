@@ -4,15 +4,20 @@ import React, {
   useState,
   Dispatch,
   SetStateAction,
+  useEffect,
 } from 'react'
 
 interface CountryContextType {
   countries: any[]
+  countriesCopy: any[]
+  setCountriesCopy: Dispatch<SetStateAction<any[]>>
   setCountries: Dispatch<SetStateAction<any[]>>
 }
 
 const CountryContext = createContext<CountryContextType>({
   countries: [],
+  countriesCopy: [],
+  setCountriesCopy: () => {},
   setCountries: () => {},
 })
 
@@ -16848,8 +16853,16 @@ export default function CountryProvider({
     },
   ])
 
+  const [countriesCopy, setCountriesCopy] = useState<any[]>([])
+
+  useEffect(() => {
+    setCountriesCopy(countries)
+  }, [countries])
+
   return (
-    <CountryContext.Provider value={{ countries, setCountries }}>
+    <CountryContext.Provider
+      value={{ countries, setCountries, countriesCopy, setCountriesCopy }}
+    >
       {children}
     </CountryContext.Provider>
   )
