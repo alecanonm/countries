@@ -5,12 +5,16 @@ import { RootLayout } from './layouts'
 import './styles/index.css'
 import App from './App'
 import CountryProvider from './context/CountryContext'
+import { CardInfo } from './pages'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
-    children: [{ path: '/', element: <App /> }],
+    children: [
+      { path: '/', element: <App /> },
+      { path: '/:name', element: <CardInfo /> },
+    ],
   },
 ])
 
